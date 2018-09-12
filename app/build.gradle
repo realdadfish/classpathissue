@@ -1,0 +1,23 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "biz.thomaskeller.classpathissue"
+        minSdkVersion 22
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.android.support:appcompat-v7:28.0.0-rc02'
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-inline:2.21.0'
+    testImplementation 'org.powermock:powermock-api-mockito2:2.0.0-beta.5'
+    testImplementation 'org.powermock:powermock-module-junit4:2.0.0-beta.5'
+}
